@@ -1,0 +1,7 @@
+C:\ElevenFiftyProjects\MadLibs\bin\Debug\MadLibs.exe.config
+C:\ElevenFiftyProjects\MadLibs\bin\Debug\MadLibs.exe
+C:\ElevenFiftyProjects\MadLibs\bin\Debug\MadLibs.pdb
+C:\ElevenFiftyProjects\MadLibs\obj\Debug\MadLibs.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\MadLibs\obj\Debug\MadLibs.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\MadLibs\obj\Debug\MadLibs.exe
+C:\ElevenFiftyProjects\MadLibs\obj\Debug\MadLibs.pdb
