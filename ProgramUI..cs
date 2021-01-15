@@ -10,10 +10,7 @@ namespace MadLibs
     {
         public void Run()
         {
-            Menu();
-            Console.WriteLine("----------------------\n" +
-                "Madlibs!\n" +
-                "----------------------");
+            Menu();            
         }
 
         static void Menu()
@@ -21,15 +18,18 @@ namespace MadLibs
             bool keepRunning = true;
             while (keepRunning)
             {
-                Console.WriteLine("Select a story from the menu:\n" +
-                   "1. Sir Conan Doyle\n" +
-                   "2. Agatha Christe\n" +
-                   "3. F. Scott Fitzgerald\n" +
-                   "4. Exit Menu");
+                Console.WriteLine("\n\t\t\t----------------------\n" +
+                "\t\t\t-------Madlibs!-------\n" +
+                "\t\t\t----------------------");
+                Console.WriteLine("\n\t\t\tSelect a story from the menu:\n\n" +
+                   "\n\t\t\t1. Sir Conan Doyle\n" +
+                   "\n\t\t\t2. Agatha Christe\n" +
+                   "\n\t\t\t3. F. Scott Fitzgerald\n" +
+                   "\n\t\t\t4. Exit Menu");
 
                 var userChoice = int.Parse(TryAnswer());
 
-                Console.WriteLine("Please enter the appropriate words to create your MadLib.\n");
+                Console.WriteLine("\t\t\tPlease enter the appropriate words to create your MadLib.\n");
                 switch (userChoice)
                 {
                     case 1:
@@ -46,12 +46,12 @@ namespace MadLibs
                         break;
                     case 4:
                         Console.Clear();
-                        Console.WriteLine("Thanks for playing... Bye!    Please press any key to continue");
+                        Console.WriteLine("\t\t\tThanks for playing... Bye!    Please press any key to continue");
                         keepRunning = false;
                         Console.Read();
                         break;
                     default:
-                        Console.WriteLine("Please enter a valid number.");
+                        Console.WriteLine("\t\t\tPlease enter a valid number.");
                         break;
                 }
                 Console.Clear();
@@ -60,25 +60,25 @@ namespace MadLibs
         static void SirConanDoyle()
         {
             // user input
-            Console.Write("\nPick a noun: ");
+            Console.Write("\n\t\t\tPick a noun: ");
             var noun = TryAnswer();
-            Console.Write("\nPick a adjective: ");
+            Console.Write("\n\t\t\tPick a adjective: ");
             var adjective = TryAnswer();
-            Console.Write("\nPick another adjective: ");
+            Console.Write("\n\t\t\tPick another adjective: ");
             var adjective1 = TryAnswer();
-            Console.Write("\nPick a being: ");
+            Console.Write("\n\t\t\tPick a being: ");
             var being = TryAnswer();
-            Console.Write("\nPick a person: ");
+            Console.Write("\n\t\t\tPick a person: ");
             var person = TryAnswer();
-            Console.Write("\nPick another noun: ");
+            Console.Write("\n\t\t\tPick another noun: ");
             var noun1 = TryAnswer();
-            Console.Write("\nPick another adjective: ");
+            Console.Write("\n\t\t\tPick another adjective: ");
             var adjective2 = TryAnswer();
-            Console.Write("\nPick another noun: ");
+            Console.Write("\n\t\t\tPick another noun: ");
             var noun2 = TryAnswer();
-            Console.Write("\nPick another noun: ");
+            Console.Write("\n\t\t\tPick another noun: ");
             var noun3 = TryAnswer();
-            Console.Write("They all agreed that it was a huge ");
+            Console.Write("\nThey all agreed that it was a huge ");
             GetColor(noun);
             Console.Write(", ");
             GetColor(adjective);
@@ -86,11 +86,11 @@ namespace MadLibs
             GetColor(adjective1);
             Console.Write(", ");
             GetColor(being);
-            Console.Write(".\nI have cross-examined these men, one of them a hard-headed ");
+            Console.Write(".\n\nI have cross-examined these men, one of them a hard-headed ");
             GetColor(person);
             Console.Write(", one a moorland ");
             GetColor(noun1);
-            Console.Write(", who all tell the same story of this ");
+            Console.Write(", \n\nwho all tell the same story of this ");
             GetColor(adjective2);
             Console.Write(" ");
             GetColor(noun2);
@@ -104,47 +104,47 @@ namespace MadLibs
         {
             //Get user inputs and show in another color
             Console.Clear();
-            Console.Write("Pick a City: ");
+            Console.Write("\n\t\t\tPick a City: ");
             Console.ForegroundColor = ConsoleColor.Green;
             var city20 = TryAnswer();
             Console.ResetColor();
 
-            Console.Write("\nPick a past tense verb: ");
+            Console.Write("\n\t\t\tPick a past tense verb: ");
             var verb20 = TryAnswer();
 
-            Console.Write("\nPick an noun: ");
+            Console.Write("\n\t\t\tPick an noun: ");
             var noun20 = TryAnswer();
 
-            Console.Write("\nPick adjective: ");
+            Console.Write("\n\t\t\tPick adjective: ");
             var adjective20 = TryAnswer();
 
-            Console.Write("\nPick a noun: ");
+            Console.Write("\n\t\t\tPick a noun: ");
             var noun21 = TryAnswer();
 
-            Console.Write("\nPick another noun: ");
+            Console.Write("\n\t\t\tPick another noun: ");
             var noun23 = TryAnswer();
 
-            Console.Write("\nPick a person: ");
+            Console.Write("\n\t\t\tPick a person: ");
             var person20 = TryAnswer();
 
-            Console.Write("\nPick another passed tense verb: ");
+            Console.Write("\n\t\t\tPick another passed tense verb: ");
             var verb21 = TryAnswer();
 
-            Console.Write("\nPick a plural noun: ");
+            Console.Write("\n\t\t\tPick a plural noun: ");
             var noun24 = TryAnswer();
 
             //add inputs to story and output the user input in a different color 
             Console.Write("\nThe Simplon Orient Express arrived at ");
             GetColor(city20);
-            Console.Write(" at a quarter to nine that evening.\nIt was not due to depart again until 9:15, so Poirot ");
+            Console.Write(" at a quarter to nine that evening.\n\nIt was not due to depart again until 9:15, so Poirot ");
             GetColor(verb20);
             Console.Write(" to the ");
             GetColor(noun21);
-            Console.Write(".\nHe did not, however, remain there long.\nThe cold was ");
+            Console.Write(".\n\nHe did not, however, remain there long.\n\nThe cold was ");
             GetColor(adjective20);
-            Console.Write(", and though the platform itself was protected, heavy ");
+            Console.Write(", and though the platform itself was protected, \n\nheavy ");
             GetColor(noun23);
-            Console.Write(" was falling outside.\nHe returned to his compartment.\nThe ");
+            Console.Write(" was falling outside.\n\nHe returned to his compartment.\n\nThe ");
             GetColor(person20);
             Console.Write(", who was on the platform ");
             GetColor(verb21);
@@ -159,53 +159,53 @@ namespace MadLibs
         {
             //Get user inputs and show in another color
             Console.Clear();
-            Console.Write("Pick a city: ");
+            Console.Write("\n\t\t\tPick a city: ");
             var city30 = TryAnswer();
 
-            Console.Write("\nPick a noun: ");
+            Console.Write("\n\t\t\tPick a noun: ");
             var noun30 = TryAnswer();
 
-            Console.Write("\nPick another noun: ");
+            Console.Write("\n\t\t\tPick another noun: ");
             var noun31 = TryAnswer();
 
-            Console.Write("\nPick a verb: ");
+            Console.Write("\n\t\t\tPick a verb: ");
             var verb30 = TryAnswer();
 
-            Console.Write("\nPick an adjective: ");
+            Console.Write("\n\t\t\tPick an adjective: ");
             var adjective30 = TryAnswer();
 
-            Console.Write("\nPick another noun: ");
+            Console.Write("\n\t\t\tPick another noun: ");
             var noun32 = TryAnswer();
 
-            Console.Write("\nPick another noun: ");
+            Console.Write("\n\t\t\tPick another noun: ");
             var noun33 = TryAnswer();
 
-            Console.Write("\nPick another adjective: ");
+            Console.Write("\n\t\t\tPick another adjective: ");
             var adjective31 = TryAnswer();
 
-            Console.Write("\nPick another verb: ");
+            Console.Write("\n\t\t\tPick another verb: ");
             var verb31 = TryAnswer();
 
-            Console.Write("\nPick a plural noun: ");
+            Console.Write("\n\t\t\tPick a plural noun: ");
             var pluralNoun30 = TryAnswer();
 
-            Console.Write("\nPick another adjective: ");
+            Console.Write("\n\t\t\tPick another adjective: ");
             var adjective32 = TryAnswer();
 
             //add inputs to story and output in another color 
-            Console.Write("\nAbout half way between West Egg and ");
+            Console.Write("\n\nAbout half way between West Egg and ");
             GetColor(city30);
             Console.Write(" the ");
             GetColor(noun30);
             Console.Write(" hastily joins the ");
             GetColor(noun31);
-            Console.Write(" and runs beside it for a quarter of a mile so as to ");
+            Console.Write("\n\nand runs beside it for a quarter of a mile so as to ");
             GetColor(verb30);
             Console.Write(" away from a certain ");
             GetColor(adjective30);
             Console.Write(" area of ");
             GetColor(noun32);
-            Console.Write(".\nThis is a ");
+            Console.Write(".\n\nThis is a ");
             GetColor(noun33);
             Console.Write(" of ashes--a ");
             GetColor(adjective31);
@@ -213,7 +213,7 @@ namespace MadLibs
             GetColor(verb31);
             Console.Write(" like wheat into ");
             GetColor(pluralNoun30);
-            Console.Write(" and hills and ");
+            Console.Write("\n\nand hills and ");
             GetColor(adjective31);
             Console.Write(" gardens.\n\n");
             //send user back to the menu after viewing the madlib
@@ -223,10 +223,10 @@ namespace MadLibs
         public static string TryAnswer()
         {
             //This looks at the user input to be sure there is an answer and displays answer in anther color
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Blue;
             var answer = Console.ReadLine();
             Console.ResetColor();
-            if (answer == "")
+            while (answer == "")
             {
                 Console.WriteLine("You didn't type anything");
                 return Console.ReadLine();

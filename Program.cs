@@ -13,7 +13,5 @@ namespace MadLibs
             ProgramUI program = new ProgramUI();
             program.Run();
         }
-        
-
     }
 }
